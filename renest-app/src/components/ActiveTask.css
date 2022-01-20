@@ -1,0 +1,25 @@
+.task-container {
+    display: flex;
+    align-items: center;
+    background: white;
+    width: 359px;
+    height: 80px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.task-cercle {
+    border-style: solid;
+    border-width: 0.5px;
+    border-radius: 50%;
+    border-color: rgb(167, 167, 167);
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+
+}
+
+.task-name {
+    font-size: 1.2rem;
+    margin-left: 20px;
+}

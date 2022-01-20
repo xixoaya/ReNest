@@ -1,0 +1,48 @@
+.new-task__container {
+    display: flex;
+    align-items: center;
+    background: rgb(236, 237, 238);
+    width: 359px;
+    height: 60px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+
+.new-task-plus {
+    color: rgb(167, 167, 167);
+    margin-left: 20px;
+    font-size: 2.5rem;
+}
+
+.new-task-name {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    left: 10px;
+}
+
+.new-task {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.new-task-priority {
+    width: 90px;
+    height: 50px;
+    border-radius: 7px;
+    text-align: center;
+    padding: 7px;
+    margin-left: 5px;
+}
+
+.new-task-priority--high {
+    background-color: red;
+}
+
+.new-task-priority--normal {
+    background-color: green;
+}
+
+.new-task-priority--low {
+    background-color: blue;
+}

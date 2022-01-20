@@ -1,0 +1,9 @@
+.add-task__container {
+    /* background-color: rgb(244, 247, 250); */
+    width: 375px;
+    height: 654px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

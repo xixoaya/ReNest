@@ -1,0 +1,54 @@
+.completed-task__container {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    width: 359px;
+    height: 80px;
+    margin-bottom: 10px;
+    border-bottom-color: grey;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+}
+
+.completed-task-name {
+    font-size: 1.2rem;
+    margin-left: 20px;
+    text-decoration: line-through;
+}
+
+.checkmark {
+    /* display:inline-block; */
+    width:35px;
+    height:35px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+}
+
+.checkmark-circle {
+    /* position: absolute; */
+    width:35px;
+    height:35px;
+    background-color: rgb(167, 167, 167);
+    border-radius:50%;
+    /* left:0;
+    top:0; */
+}
+
+.checkmark-stem {
+    position: absolute;
+    width: 2px;
+    height: 17px;
+    background-color: #fff;
+    left: 20px;
+    top: 6px;
+}
+
+.checkmark-kick {
+    position: absolute;
+    width: 10px;
+    height: 2px;
+    background-color: #fff;
+    left: 12px;
+    top: 23px;
+}

@@ -1,0 +1,18 @@
+.task-header__container {
+    width: 375px;
+    height: 100px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.task-header-title {
+    margin-top: 15px;
+    margin-left: 95px;
+    font-size: 1.2rem;
+}
+
+.task-header-back {
+    margin-top: 15px;
+    margin-left: 15px;
+}
