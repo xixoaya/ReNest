@@ -3,4 +3,10 @@
     width: 375px;
     height: 654px;
     overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.home__body::-webkit-scrollbar {
+    display: none;
 }

@@ -56,7 +56,12 @@ input {
     width: 375px;
     height: 754px;
     overflow-y: scroll;
-    
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.search-view-body::-webkit-scrollbar {
+    display: none;
 }
 
 .todo-search-view {

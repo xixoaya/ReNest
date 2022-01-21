@@ -6,4 +6,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.add-task__container::-webkit-scrollbar {
+    display: none;
 }
