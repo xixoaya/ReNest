@@ -20,7 +20,7 @@ const Block = ({ setCompleteTasks, priority }) => {
     
     return <>
         <div className={`priority-container priority-container--${priority}`}>
-            <h2 className={`priority-title priority-title--${priority}`}>{priority} Priority</h2>
+            <h2 className={`priority-title priority-title--${priority}`}>{priority.toUpperCase()} PRIORITY</h2>
             <div className="priority--tasks">
                 {
                     activeTasks.map(task =>

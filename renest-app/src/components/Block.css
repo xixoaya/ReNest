@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"SpaceMono-Regular";
+    src: url("../Fonts/E/SpaceMono-Regular.ttf") format("truetype");
+  }
+
 .priority-container {
     width: 375px;
     height: fit-content;
@@ -24,16 +29,18 @@
     margin-left: 20px;
     font-size: 1rem;
     margin: 20px;
+    font-family:"SpaceMono-Regular";
+    font-size: 0.9rem;
 }
 
 .priority-title--high {
-    color: red;
+    color: rgb(235, 66, 104);
 }
 
 .priority-title--low {
-    color: blue;
+    color: rgb(84, 150, 228);
 }
 
 .priority-title--normal {
-    color: greenyellow;
+    color: rgb(112, 201, 60);
 }

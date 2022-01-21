@@ -1,3 +1,8 @@
+/**
+ * returns the name of the tasks and id of those that the user has not yet selected.
+ * 
+ */
+
 import taskNames from "../data/taskNames";
 import tasks from "../data/tasks";
 
@@ -6,10 +11,3 @@ const retrieveTaskNames = () => taskNames.filter(taskName =>
 )
 
 export default retrieveTaskNames
-
-
-// const retrieveTaskNames = () => {
-//     taskNames.filter(taskName => {
-//         tasks.find( taskName => taskName.id === task.taskNameId).name
-//     })
-// }

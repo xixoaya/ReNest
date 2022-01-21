@@ -11,7 +11,7 @@ const ActiveTask = ({task : {id, name}, setReloadViewTask}) => {
     return <> 
         <div className="task-container">
             <div className="task-cercle" onClick={taskCompleted} ></div>
-            <div className="task-name">{name}</div>
+            <div className="task-name">{name[0].toUpperCase() + name.slice(1)}</div>
         </div> 
     </>
     

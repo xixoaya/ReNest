@@ -1,3 +1,8 @@
+
+/**
+ * returns all the tasks selected by the user, with their priority, status, id and corresponding nameId.
+ * 
+ */
 import tasks from "../data/tasks"
 import taskNames from "../data/taskNames"
 

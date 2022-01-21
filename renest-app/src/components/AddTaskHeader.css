@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+}
+
 .task-header__container {
     width: 375px;
     height: 100px;
@@ -10,9 +15,36 @@
     margin-top: 15px;
     margin-left: 95px;
     font-size: 1.2rem;
+    color :rgb(49, 50, 89);
+    font-family:"NotoSans-Regular";
+    font-style: bold;
 }
 
 .task-header-back {
     margin-top: 15px;
     margin-left: 15px;
+    width:30px;
+    height:30px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.header-back-stem {
+    position: absolute;
+    width: 2px;
+    height: 20px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 5px;
+}
+
+.header-back-kick {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 23px;
 }

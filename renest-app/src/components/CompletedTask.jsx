@@ -9,7 +9,7 @@ const CompletedTask = ({task : { name }}) => {
                 <div className="checkmark-stem"></div>
                 <div className="checkmark-kick"></div>
             </span>
-            <div className="completed-task-name">{name}</div>
+            <div className="completed-task-name">{name[0].toUpperCase() + name.slice(1)}</div>
         </div>
     </>
 

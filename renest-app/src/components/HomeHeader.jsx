@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import './HomeHeader.css';
 
-const HomeHeader = ({onTasks, onCompleted, showTasks, onAddTask}) => {
+const HomeHeader = ({onTasks, onCompleted, showTasks, onAddTask, onGoSearch}) => {
 
     const [tasksView, setTasksView] = useState(showTasks)
 
@@ -14,12 +14,19 @@ const HomeHeader = ({onTasks, onCompleted, showTasks, onAddTask}) => {
     return <>
         <div className="header">
             <div className="navbar">
-                <a className="navbar-menu">menu</a>
+                <span className="navbar-menu">
+                    <div className="menu-top-stem"></div>
+                    <div className="menu-medium-stem"></div> 
+                    <div className="menu-bottom-stem"></div> 
+                </span>
                 <h1 className="navbar-name">ReNest</h1>
-                <a className="navbar-add" onClick={onAddTask}>+</a>
+                <span className="navbar-add" onClick={onAddTask}>
+                    <div className="navbar-add-stem"></div>
+                    <div className="navbar-add-kick"></div>
+                </span>
             </div>
             <form className="search">
-                <input type="text" id='query' className="search-input" name="query" placeholder=" 🔍 Search" />
+                <input type="text" id='query' className="search-input" name="query" placeholder="Search" onClick={onGoSearch} />
             </form>
             <div className="home-navigation">
                 <div className={tasksView === 'activeTasks' ? "home-navigation-item__selected" : "home-navigation-item"} onClick={onTasks} >Tasks</div>

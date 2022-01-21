@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+}
+
 .task-container {
     display: flex;
     align-items: center;
@@ -10,16 +15,19 @@
 
 .task-cercle {
     border-style: solid;
-    border-width: 0.5px;
+    border-width: 1px;
     border-radius: 50%;
     border-color: rgb(167, 167, 167);
     width: 35px;
     height: 35px;
     margin-left: 20px;
+    cursor: pointer;
 
 }
 
 .task-name {
-    font-size: 1.2rem;
-    margin-left: 20px;
+    font-size: 1.1rem;
+    margin-left: 15px;
+    color: rgb(49, 50, 89);
+    font-family:"NotoSans-Regular";
 }

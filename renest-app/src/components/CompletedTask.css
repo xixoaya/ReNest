@@ -1,3 +1,8 @@
+@font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+  }
+
 .completed-task__container {
     display: flex;
     align-items: center;
@@ -5,41 +10,40 @@
     width: 359px;
     height: 80px;
     margin-bottom: 10px;
-    border-bottom-color: grey;
+    border-bottom-color: rgb(196, 194, 194);
     border-bottom-width: 1px;
     border-bottom-style: solid;
 }
 
 .completed-task-name {
-    font-size: 1.2rem;
-    margin-left: 20px;
+    font-size: 1.1rem;
+    margin-left: 15px;
     text-decoration: line-through;
+    font-family:"NotoSans-Regular";
+    color: rgb(196, 194, 194);
 }
 
 .checkmark {
-    /* display:inline-block; */
     width:35px;
     height:35px;
     -ms-transform: rotate(45deg); /* IE 9 */
     -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
     transform: rotate(45deg);
+    margin-left: 20px;
 }
 
 .checkmark-circle {
-    /* position: absolute; */
     width:35px;
     height:35px;
-    background-color: rgb(167, 167, 167);
+    background-color: rgb(231, 233, 235);
     border-radius:50%;
-    /* left:0;
-    top:0; */
 }
 
 .checkmark-stem {
     position: absolute;
     width: 2px;
     height: 17px;
-    background-color: #fff;
+    background-color: rgb(167, 167, 167);
     left: 20px;
     top: 6px;
 }
@@ -48,7 +52,7 @@
     position: absolute;
     width: 10px;
     height: 2px;
-    background-color: #fff;
+    background-color: rgb(167, 167, 167);
     left: 12px;
     top: 23px;
 }

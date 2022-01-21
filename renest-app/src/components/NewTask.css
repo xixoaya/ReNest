@@ -1,7 +1,12 @@
+@font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+}
+
 .new-task__container {
     display: flex;
     align-items: center;
-    background: rgb(236, 237, 238);
+    background: rgb(245, 247, 250);
     width: 359px;
     height: 60px;
     border-radius: 7px;
@@ -9,15 +14,58 @@
 }
 
 .new-task-plus {
-    color: rgb(167, 167, 167);
-    margin-left: 20px;
-    font-size: 2.5rem;
+    margin-left: auto;
+    margin-right: 20px;
+    width:30px;
+    height:30px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.new-task-cross {
+    margin-left: auto;
+    margin-right: 20px;
+    width:30px;
+    height:30px;
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.new-task-stem {
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(95, 95, 95);
+    left: 16px;
+    top: 5px;
+}
+
+.cross-stem {
+    background-color: rgb(167, 167, 167);
+}
+
+.new-task-kick {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(95, 95, 95);
+    left: 5px;
+    top: 16px;
+}
+
+.cross-kick {
+    background-color: rgb(167, 167, 167);
 }
 
 .new-task-name {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-left: 20px;
     left: 10px;
+    font-family:"NotoSans-Regular";
 }
 
 .new-task {
@@ -27,22 +75,33 @@
 }
 
 .new-task-priority {
-    width: 90px;
+    width: 95px;
     height: 50px;
     border-radius: 7px;
     text-align: center;
     padding: 7px;
     margin-left: 5px;
+    cursor: pointer;
+    font-family:"NotoSans-Regular";
+    font-size: 0.8rem;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+}
+
+.new-task-priority p {
+    width: 60px;
+    margin: 0;
 }
 
 .new-task-priority--high {
-    background-color: red;
+    background-color: rgb(235, 66, 104);
 }
 
 .new-task-priority--normal {
-    background-color: green;
+    background-color: rgb(112, 201, 60);
 }
 
 .new-task-priority--low {
-    background-color: blue;
+    background-color: rgb(84, 150, 228);
 }

@@ -1,3 +1,9 @@
+
+  @font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+  }
+
 .header {
     width: 375px;
     height: 158px;
@@ -17,10 +23,71 @@
     margin: 0;
     align-self: center;
     font-size: 1.3rem;
+    color :rgb(49, 50, 89);
 }
 
 .navbar-add {
-    font-size: 2rem;
+    width:30px;
+    height:30px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.navbar-add-stem {
+    position: absolute;
+    width: 2px;
+    height: 25px;
+    background-color: rgb(167, 167, 167);
+    left: 16px;
+    top: 5px;
+}
+
+.navbar-add-kick {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 16px;
+}
+
+.navbar-menu {
+    margin-top: 5px;
+    width:30px;
+    height:30px;
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Chrome, Safari, Opera */
+    transform: rotate(0deg);
+    cursor: pointer;
+}
+
+.menu-top-stem {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 6px;
+}
+
+.menu-medium-stem {
+    position: absolute;
+    width: 17px;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 15px;
+}
+
+.menu-bottom-stem {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    background-color: rgb(167, 167, 167);
+    left: 5px;
+    top: 24px;
 }
 
 .search-input {
@@ -30,6 +97,12 @@
     height: 39px;
     border-radius: 25px;
     border-style: none;
+    padding-left: 20px;
+}
+
+input::placeholder {
+    color: rgb(143, 142, 142);
+    font-size: 1rem;
 }
 
 .home-navigation {
@@ -41,7 +114,13 @@
 
 .home-navigation-item {
     margin-bottom: 15px;
-    color: grey;
+    color: rgb(196, 194, 194);
+    font-family: "NotoSans-Regular";
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+    cursor: pointer;
 }
 
 .home-navigation-item__selected {
@@ -50,4 +129,10 @@
     border-bottom-width: 1px;
     border-bottom-color: black;
     padding-bottom: 15px;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-family: "NotoSans-Regular";
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
 }

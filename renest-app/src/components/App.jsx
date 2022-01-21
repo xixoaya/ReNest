@@ -5,6 +5,7 @@ import HomeHeader from './HomeHeader';
 import HomeBody from './HomeBody';
 import AddTaskHeader from './AddTaskHeader';
 import AddTaskBody from './AddTaskBody';
+import SearchTaskView from './SearchTaskView';
 
 
 const App = () => {
@@ -20,12 +21,14 @@ const App = () => {
 
 	const goHome = () => setView('home')
 
+	const goSearchView = () => setView('search')
+
 	return <>
 		<div className="app">
     		{
 				view === 'home' && <>
         			<HomeHeader showTasks={tasksView} onTasks={activeTasks}
-						onCompleted={completedTasks} onAddTask={viewNewTasks}
+						onCompleted={completedTasks} onAddTask={viewNewTasks} onGoSearch={goSearchView}
 					/>
         			<HomeBody showTasks={tasksView} />
       			</>
@@ -34,6 +37,11 @@ const App = () => {
 				view === "newTasks" && <>
         			<AddTaskHeader onGoBack={goHome} />
         			<AddTaskBody />
+      			</>
+			}
+			{
+				view === "search" && <>
+        			<SearchTaskView onGoBack={goHome} />
       			</>
 			}
     	</div>

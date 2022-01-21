@@ -1,0 +1,66 @@
+@font-face {
+    font-family:"NotoSans-Regular";
+    src: url("../Fonts/B/NotoSans-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family:"LibreBaskerville-Italic";
+    src: url("../Fonts/A/LibreBaskerville-Italic.ttf") format("truetype");
+}
+
+.search-view-header {
+    display: flex;
+    width: 375px;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.search-view-input {
+    background-color: rgb(244, 247, 250);
+    border-style: none;
+    width: 280px;
+    height: 39px;
+    border-radius: 25px;
+    border-style: none;
+    margin-left: 10px;
+    padding-left: 20px;
+}
+
+input {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    border-bottom-style: groove;
+    background-color: #eee;
+    outline: none;
+}
+
+
+.search-view-cancel {
+    cursor: pointer;
+    margin-right: 10px;
+    font-family:"NotoSans-Regular";
+    font-size: 1rem;
+    color: rgb(95, 95, 95);
+}
+
+.search-view-input::placeholder {
+    color: rgb(95, 95, 95);
+    font-size: 1rem;
+    padding-left: 20px;
+}
+
+.search-view-body {
+    background-color: rgb(244, 247, 250);
+    width: 375px;
+    height: 754px;
+    overflow-y: scroll;
+    
+}
+
+.todo-search-view {
+    font-family:"LibreBaskerville-Italic";
+    margin-top: 30px;
+    font-size: 1rem;
+}
